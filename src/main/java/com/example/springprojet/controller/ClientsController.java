@@ -114,12 +114,12 @@ public class ClientsController {
                 listeClients = clientServiceImp.getClientByName(likePattern,page, size);
             }
 
-
             int[] taillePagination = IntStream.range(0, listeClients.getTotalPages()).toArray();
             model.addAttribute("taillePagination", taillePagination);
             model.addAttribute("nbPages", listeClients.getTotalPages());
             model.addAttribute("nbElements", listeClients.getTotalElements());;
             model.addAttribute("listeClients", listeClients);
+            model.addAttribute("nom", name);
 
             return "search";
         }

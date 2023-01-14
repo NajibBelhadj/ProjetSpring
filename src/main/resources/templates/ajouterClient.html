@@ -32,7 +32,7 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label"> nom de client:</label>
                         <div class="col-sm-10">
-                            <input type="text" th:field="*{nomClient}"
+                            <input type="text" th:field="*{nomClient}" required="true"
                                    class="form-control" placeholder="nom de client" />
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label"> mail de client:</label>
                         <div class="col-sm-10">
-                            <input type="text" th:field="*{mailClient}"
+                            <input type="text" th:field="*{mailClient}" required="true"
                                    class="form-control" placeholder="mail de client" />
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label"> numero Telephone de client:</label>
                         <div class="col-sm-10">
-                            <input type="text" th:field="*{telClient}"
+                            <input type="text" th:field="*{telClient}" required="true"
                                    class="form-control" placeholder="numero Telephone de client" />
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label"> rue de client:</label>
                         <div class="col-sm-10">
-                            <input type="text" th:field="*{addressClient.rue}"
+                            <input type="text" th:field="*{addressClient.rue}" required="true"
                                    class="form-control" placeholder="rue de client" />
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label"> Ville de client:</label>
                         <div class="col-sm-10">
-                            <input type="text" th:field="*{addressClient.ville}"
+                            <input type="text" th:field="*{addressClient.ville}" required="true"
                                    class="form-control" placeholder="Ville de client" />
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label"> Code Postal:</label>
                         <div class="col-sm-10">
-                            <input type="text" th:field="*{addressClient.codePostal}"
+                            <input type="text" th:field="*{addressClient.codePostal}" required="true"
                                    class="form-control" placeholder="Code Postal" />
                         </div>
                     </div>

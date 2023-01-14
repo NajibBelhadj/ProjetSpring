@@ -34,7 +34,7 @@
               <form th:action="@{/user/rechercheClient}" method="post">
                 <div class="input-group">
 
-                  <input type="text" name="name" class="form-control"
+                  <input th:value="*{nom}" type="text" name="name" class="form-control"
                          placeholder="Name" />
 
                   <select class="form-control" name="orderBy">
@@ -43,7 +43,7 @@
                     <option value="nbCommande">Nombre Commande</option>
                   </select>
 
-                  <select  class="form-control" name="ville">
+                  <select class="form-control" name="ville">
                     <option value="" disabled selected>Ville</option>
                     <option th:each="ville:${listVilles}"
                             th:text="${ville}" th:value="${ville}"></option>
